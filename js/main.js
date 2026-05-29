@@ -8,17 +8,17 @@ const headerTemplate = `
   <!-- FIXED NAVBAR -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a class="nav-logo" href="index.html">
+      <a class="nav-logo" href="./">
         <img src="images/logo.png" alt="Ortulex Emblem Logo">
       </a>
       
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="practices.html">Practice Areas</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="why.html">Why Ortulex</a></li>
-        <li><a class="nav-cta" href="consultation.html">Consultation</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="about">About Us</a></li>
+        <li><a href="practices">Practice Areas</a></li>
+        <li><a href="team">Our Team</a></li>
+        <li><a href="why">Why Ortulex</a></li>
+        <li><a class="nav-cta" href="consultation">Consultation</a></li>
       </ul>
 
       <div class="hamburger" onclick="toggleMobileMenu()">
@@ -32,12 +32,12 @@ const headerTemplate = `
   <!-- MOBILE MENU DROPDOWN -->
   <div class="mobile-menu" id="mobile-menu">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="practices.html">Practice Areas</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="why.html">Why Ortulex</a></li>
-      <li><a class="nav-cta" style="text-align: center; margin-top: 10px;" href="consultation.html">Consultation</a></li>
+      <li><a href="./">Home</a></li>
+      <li><a href="about">About Us</a></li>
+      <li><a href="practices">Practice Areas</a></li>
+      <li><a href="team">Our Team</a></li>
+      <li><a href="why">Why Ortulex</a></li>
+      <li><a class="nav-cta" style="text-align: center; margin-top: 10px;" href="consultation">Consultation</a></li>
     </ul>
   </div>
 `;
@@ -65,22 +65,22 @@ const footerTemplate = `
         <div class="footer-col">
           <h5>Quick Nav</h5>
           <ul>
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="practices.html">Practice Areas</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="why.html">Why Ortulex</a></li>
-            <li><a href="consultation.html">Consultation</a></li>
+            <li><a href="./">Home Page</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="practices">Practice Areas</a></li>
+            <li><a href="team">Our Team</a></li>
+            <li><a href="why">Why Ortulex</a></li>
+            <li><a href="consultation">Consultation</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h5>Practice Areas</h5>
           <ul>
-            <li><a href="practices.html">Corporate Law</a></li>
-            <li><a href="practices.html">Criminal Defense</a></li>
-            <li><a href="practices.html">Matrimonial Disputes</a></li>
-            <li><a href="practices.html">Civil Recovery</a></li>
+            <li><a href="practices">Corporate Law</a></li>
+            <li><a href="practices">Criminal Defense</a></li>
+            <li><a href="practices">Matrimonial Disputes</a></li>
+            <li><a href="practices">Civil Recovery</a></li>
           </ul>
         </div>
 
@@ -97,10 +97,17 @@ const footerTemplate = `
 
       <div class="footer-bottom">
         <p>&copy; 2026 Ortulex Law Firm. All Rights Reserved. Delhi, India.</p>
-        <p>Strategic Design by <a href="#" style="color: var(--gold);">Antigravity</a></p>
+        <p>Strategic Design & Managed by <a href="https://gautamstack.com/" target="_blank" style="color: var(--gold);">Gautamstack Digital</a></p>
       </div>
     </div>
   </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/919034084323" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 16 16" fill="currentColor">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+  </a>
 `;
 
 function loadHeaderFooter() {
@@ -130,13 +137,45 @@ document.addEventListener('DOMContentLoaded', () => {
   // Load templates first
   loadHeaderFooter();
 
+  // If running locally via file:// protocol, append .html to pretty links and rewrite './' to 'index.html' so links work without a local server
+  if (window.location.protocol === 'file:') {
+    const allLinks = document.querySelectorAll('a[href]');
+    allLinks.forEach(link => {
+      let href = link.getAttribute('href');
+      if (href) {
+        if (href === './' || href === '/') {
+          link.setAttribute('href', 'index.html');
+        } else if (
+          !href.startsWith('http') &&
+          !href.startsWith('//') &&
+          !href.startsWith('#') &&
+          !href.startsWith('mailto:') &&
+          !href.startsWith('tel:') &&
+          !href.endsWith('.html') &&
+          !href.includes('.')
+        ) {
+          link.setAttribute('href', href + '.html');
+        }
+      }
+    });
+  }
+
   const currentPath = window.location.pathname;
-  const pageName = currentPath.substring(currentPath.lastIndexOf('/') + 1) || 'index.html';
+  const cleanPath = currentPath.endsWith('/') ? currentPath.slice(0, -1) : currentPath;
+  let pageName = cleanPath.substring(cleanPath.lastIndexOf('/') + 1) || 'index';
+  pageName = pageName.replace('.html', '');
+  if (pageName === '' || pageName === 'index') {
+    pageName = './';
+  }
 
   const navLinks = document.querySelectorAll('.nav-links li a, .mobile-menu ul li a');
   navLinks.forEach(link => {
-    const linkHref = link.getAttribute('href');
-    if (linkHref === pageName) {
+    const linkHref = link.getAttribute('href') || '';
+    const cleanLinkHref = linkHref.replace('.html', '');
+    const isHomeActive = (pageName === './' && (linkHref === './' || linkHref === '/' || linkHref === 'index.html' || linkHref === './index.html'));
+    const isPageActive = (cleanLinkHref === pageName);
+
+    if (isHomeActive || isPageActive) {
       link.classList.add('active');
     } else {
       link.classList.remove('active');
@@ -219,7 +258,7 @@ I would like to submit a Case Evaluation Request:
 • Legal Assistance Summary: ${message}`;
 
       const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(waText)}`;
-      
+
       // Open WhatsApp link in new tab
       window.open(waUrl, '_blank');
 
@@ -227,7 +266,7 @@ I would like to submit a Case Evaluation Request:
       if (formSuccess) {
         formSuccess.style.display = 'block';
         formSuccess.textContent = `Thank you, ${name}! Your details have been compiled. Opening WhatsApp to submit your request...`;
-        
+
         // Reset form
         contactForm.reset();
 

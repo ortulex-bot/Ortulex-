@@ -122,7 +122,7 @@ h4 { font-size: 1.25rem; }
 .nav-inner {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   height: 80px;
   display: flex;
   align-items: center;
@@ -135,7 +135,7 @@ h4 { font-size: 1.25rem; }
   cursor: pointer;
 }
 .nav-logo img {
-  height: 64px;
+  height:80px;
   width: auto;
   filter: brightness(1);
   transition: var(--transition);
@@ -954,7 +954,7 @@ footer {
   margin-bottom: 3rem;
 }
 .footer-brand img {
-  height: 60px;
+  height: 80px;
   margin-bottom: 1rem;
   filter: brightness(0.9);
 }
